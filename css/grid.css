@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1.5em;
+  font-family: Arial, sans-serif;
+}
+
+#gridWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+}
+
+
+#box1  { background: #444; color: #fff; }
+#box2  { background: #CCCDCD; }
+#box3  { background: #999999; }
+#box4  { background: #CCCDCD; margin: 0; }
+#box5  { background: #999999; }
+#box6  { background: #CCCDCD; display: flex; gap: 0.5em; align-items: center; }
+#box7  { background: rgb(242, 242, 242); min-height: 200px; }
+#box8  { background: lightcoral; }
+#box9  { background: rgb(242, 242, 242); min-height: 150px; }
+#box10 { background: #444; color: #fff; }
+
+#gridWrapper > * {
+  padding: 1em;
+}
+
+#box1  { grid-area: HEADER; }
+#box2  { grid-area: LISTA; }
+#box3  { grid-area: ELEMENTS; }
+#box4  { grid-area: TITOL; }
+#box5  { grid-area: BUTTONS; }
+#box6  { grid-area: BUTTONS2; }
+#box7  { grid-area: TABLE; }
+#box8  { grid-area: ASIDE; }
+#box9  { grid-area: README; }
+#box10 { grid-area: FOOTER; }
+
+#gridWrapper {
+  grid-template-areas:
+    "HEADER"
+    "LISTA"
+    "ELEMENTS"
+    "TITOL"
+    "BUTTONS"
+    "BUTTONS2"
+    "TABLE"
+    "ASIDE"
+    "README"
+    "FOOTER";
+}
+
+@media only screen and (min-width: 640px) {
+  #gridWrapper {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "HEADER   HEADER"
+      "LISTA    ELEMENTS"
+      "TITOL    TITOL"
+      "BUTTONS  BUTTONS2"
+      "TABLE    ASIDE"
+      "README   ASIDE"
+      "FOOTER   FOOTER";
+  }
+}
