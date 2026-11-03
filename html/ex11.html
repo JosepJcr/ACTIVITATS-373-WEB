@@ -1,0 +1,34 @@
+<!-- Descripció:
+No sempre necessitem JavaScript per validar formularis! HTML5 ja incorpora validació nativa que pots utilitzar de manera fàcil i intuïtiva. En aquest exercici, crearàs un formulari que valida automàticament la informació de l’usuari sense necessitat d’utilitzar codi JavaScript.
+Objectiu:
+Aprendre a utilitzar atributs nadius d'HTML5 per validar dades en un formulari, com required, minlength, maxlength, pattern, i altres.
+Instruccions:
+   1. Crea un camp per al nom i fes-lo obligatori.
+   2. Crea un camp de correu electrònic per tal que es validi si es tracta d’una adreça vàlida o no.
+   3. Crea un camp de contrasenya i configura’l per tal que la contrasenya tingui almenys 8 caràcters.
+   4. Afegeix un camp pel número de telèfon que només accepti 9 dígits numèrics.
+Pistes:
+Experimenta amb altres atributs com maxlength, min, max, i step per controlar els valors d’entrada en altres tipus de camps. -->
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EX11 </title>
+</head>
+<form action="process_form.php" method="post">
+  <label for="name">Nom:</label>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Correu electrònic:</label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="password">Contrasenya:</label>
+  <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+  <label for="phone">Telèfon:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" required><br><br>
+
+  <input type="submit" value="Enviar">
+</body>
+</html>

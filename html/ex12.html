@@ -1,0 +1,72 @@
+<!-- Descripció:
+Ara que ja coneixes tots els fonaments d'HTML5, és hora de posar-los en pràctica. En aquest exercici crearàs un lloc web complet amb tots els elements que has après fins ara. El lloc ha de tenir diverses seccions: un encapçalament, un formulari de contacte, una taula, un enllaç a un vídeo, i una llista.
+Objectiu:
+Consolidar tot el que has après creant un lloc web complet i funcional, amb estructura semàntica i elements d’interacció.
+Instruccions:
+   1. Crea una capçalera, incloent un títol i una breu descripció.
+   2. Inclou un formulari de contacte com el de l’Exercici 9 amb camps per al nom, email i missatge.
+   3. Crea una taula que mostri algun tipus d'informació, com una agenda o un horari.
+   4. Afegeix un enllaç a un vídeo de YouTube o integra un vídeo local.
+   5. Mostra una llista de tasques o preferències personals.
+Pistes:
+Aquest és el moment d’aplicar la teva creativitat! Imagina que aquest lloc web és la teva pròpia pàgina personal o un projecte somiat. Fes que sigui únic i reflecteixi la teva personalitat! -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX12 </title>
+</head>
+<h1>Benvingut al meu lloc web!</h1>
+<p>Aquest és un lloc web d'exemple creat amb HTML5. Aquí trobaràs un formulari de contacte, una taula amb un horari, un vídeo i una llista de preferències.</p>
+<body>
+<nav>
+    <form action="#" method="post">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Correu electrònic:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Missatge:</label>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Escriu el teu missatge"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+</nav>
+
+<table>
+  <tr>
+    <th>Dia</th>
+    <th>Activitat</th>
+  </tr>
+  <tr>
+    <td>Dilluns</td>
+    <td>Reunió d'equip</td>
+  </tr>
+  <tr>
+    <td>Dimarts</td>
+    <td>Treball en projecte</td>
+  </tr>
+  <tr>
+    <td>Dimecres</td>
+    <td>Formació en línia</td>
+  </tr>
+  <tr>
+    <td>Dijous</td>
+    <td>Revisió de tasques</td>
+  </tr>
+  <tr>
+    <td>Divendres</td>
+    <td>Presentació de resultats</td>
+  </tr>
+</table>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b3Fx6H-hJuI?si=aeDJgR9Cw5LzBdbS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ul>
+  <li>guinea pigs</li>
+  <li>french bulldogs</li>
+  <li>pugs</li>
+  <li>bubu&dudu</li>
+  <li>tung tung sahur</li>
+</ul>
+</body>
+</html>

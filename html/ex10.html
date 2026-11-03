@@ -1,0 +1,34 @@
+<!-- Descripció:
+Imagina que estàs creant un formulari de registre per un lloc web. Hauràs de crear un formulari on els usuaris puguin crear un compte introduint el seu nom, correu electrònic, contrasenya i una casella de selecció per acceptar els termes i condicions.
+Objectiu:
+Aprendre a utilitzar diferents tipus d’inputs d’HTML5, com el camp de contrasenya, caselles de selecció, i altres camps interactius.
+Pistes:
+Assegura't d'afegir una etiqueta <label> per a cada camp i enllaçar-les amb l'atribut for per millorar l'accessibilitat del formulari. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari de Registre</title>
+    <link rel="stylesheet" href="">    
+</head>
+<body>
+<nav>
+    <form action="#" method="post">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Correu electrònic:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Contrasenya:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">Accepto els termes i condicions</label><br><br>
+
+        <input type="submit" value="Registrar-se">
+    </form>
+</nav>
+</body>
+</html>
